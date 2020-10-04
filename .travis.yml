@@ -27,5 +27,6 @@ deploy:
   repo: Nik3991/Nik3991.github.io
   github_token: $GITHUB_TOKEN
   keep_history: true
+  target_branch: gh-pages
   on:
     branch: master

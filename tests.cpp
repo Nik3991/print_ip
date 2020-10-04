@@ -1,6 +1,7 @@
-
 #define BOOST_TEST_MODULE helloworld_test_module
 #include <boost/test/included/unit_test.hpp>
+
+#include "IPPrint.h"
 
 BOOST_AUTO_TEST_SUITE(ci_cd_test_suite)
 
