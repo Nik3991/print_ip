@@ -20,6 +20,10 @@ deploy:
   script:
   - curl -f -T print_ip-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -unik3991:${BINTRAY_API_KEY} "https://api.bintray.com/content/nik3991/otus_p/homework/${TRAVIS_BUILD_NUMBER}/print_ip-0.0.${TRAVIS_BUILD_NUMBER}-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
 
+branches:
+  only:
+  - gh-pages
+
 deploy:
   provider: pages
   local_dir: html
@@ -30,3 +34,4 @@ deploy:
   target_branch: gh-pages
   on:
     branch: master
+    
