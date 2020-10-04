@@ -22,7 +22,7 @@ deploy:
 
 deploy:
   provider: pages
-  local_dir: docs/html
+  local_dir: html
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
