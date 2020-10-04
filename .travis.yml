@@ -23,6 +23,7 @@ deploy:
 deploy:
   provider: pages
   local_dir: html
+  target_branch: master
   skip_cleanup: true
   repo: Nik3991/Nik3991.github.io
   github_token: $GITHUB_TOKEN
